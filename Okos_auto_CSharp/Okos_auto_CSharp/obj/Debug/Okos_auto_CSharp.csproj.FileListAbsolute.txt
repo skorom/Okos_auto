@@ -1,0 +1,10 @@
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\bin\Debug\Okos_auto_CSharp.exe.config
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\bin\Debug\Okos_auto_CSharp.exe
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\bin\Debug\Okos_auto_CSharp.pdb
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\obj\Debug\Okos_auto_CSharp.csprojAssemblyReference.cache
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\obj\Debug\Okos_auto_CSharp.Properties.Resources.resources
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\obj\Debug\Okos_auto_CSharp.csproj.GenerateResource.cache
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\obj\Debug\Okos_auto_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\obj\Debug\Okos_auto_CSharp.exe
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\obj\Debug\Okos_auto_CSharp.pdb
+C:\Users\Szilárd\Source\Repos\Okos_auto\Okos_auto_CSharp\Okos_auto_CSharp\obj\Debug\Okos_auto_CSharp.Form1.resources
