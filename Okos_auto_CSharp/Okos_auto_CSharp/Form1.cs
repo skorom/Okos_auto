@@ -18,7 +18,7 @@ namespace Okos_auto_CSharp
             InitializeComponent();
         }
 
-        private const string terkepFIleName = "terkep.txt";
+        private const string terkepFileName = "terkep.txt";
         private const string szenzorFileName = "szenzor.txt";
 
         private AutoUt autoUt;
@@ -47,10 +47,11 @@ namespace Okos_auto_CSharp
             {
                 MessageBox.Show(ex.Message,"Adathiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            /*
             catch(Exception ex)
             {
                 MessageBox.Show("Ismeretlen hiba történt a futás során", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
 
         }
         private void idoPillanatokInicializalas()
@@ -59,6 +60,14 @@ namespace Okos_auto_CSharp
         }
         private void ablakhozAdas()
         {
+            for (int i = 0; i < idoPillanatban.GetLength(0); i++)
+            {
+                for (int j = 0; j < idoPillanatban.GetLength(1); j++)
+                {
+                    idoPillanatban[i, j].Size = new Size(30, 100);
+                    idoPillanatban[i, j].Location = new Point(i * 30, j * 100);
+                }
+            }
             idoPillanatban.Cast<TextBox>().ToList().ForEach(x => this.Controls.Add(x));
             this.Controls.Add(idopillanatok);
 
@@ -69,7 +78,7 @@ namespace Okos_auto_CSharp
         }
         private AutoUt autoUtGeneralas()
         {
-            Terkep terkep = Terkep.terkepEloallitasFilebol(terkepFIleName);
+            Terkep terkep = Terkep.terkepEloallitasFilebol(terkepFileName);
             this.terkepX = terkep.tablazat.GetLength(0);
             this.terkepY = terkep.tablazat.GetLength(1);
             List<Szenzor> szenzorAdatok = Szenzor.szenzorAdatokEloallitasFilebol(szenzorFileName);

@@ -8,13 +8,13 @@ namespace Okos_auto_CSharp
 {
     class Koordinata
     {
-        public Koordinata(int _x, int _y)
+        public Koordinata(double _x, double _y)
         {
             this.x = _x;
             this.y = _y;
         }
 
-        public int x { get; set; }
-        public int y { get; set; }
+        public double x { get; set; }
+        public double y { get; set; }
     }
 }

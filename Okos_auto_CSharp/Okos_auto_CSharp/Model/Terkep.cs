@@ -15,10 +15,10 @@ namespace Okos_auto_CSharp
             int sorhossz = fajl[0].Split(' ').Length;
             if (fajl.Length<5 || fajl.Length>20 || sorhossz < 5 || sorhossz > 20)
             {
-                throw new IOException("A táblázat hosszai nem a megadott tartományon belül vannak");
+                throw new IOException("A táblázat méretei nem a megadott tartományon belül vannak");
             }
 
-            Cella[,] _tablazat = new Cella[fajl.Length, sorhossz];
+            tablazat = new Cella[fajl.Length, sorhossz];
 
             for (int i = 0; i < tablazat.GetLength(0); i++)
             {

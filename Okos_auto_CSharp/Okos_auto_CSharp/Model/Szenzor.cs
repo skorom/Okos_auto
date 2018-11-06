@@ -12,12 +12,12 @@ namespace Okos_auto_CSharp
     {
         public Szenzor (string sor)
         {
-            this.idopont = Convert.ToDouble(sor.Split(' ')[0]);
+            this.idopont = Convert.ToDouble(sor.Split(' ')[0].Replace('.',','));
             this.esemeny = sor.Split(' ')[1];
             if(esemeny == "KOORD")
             {
-                int x = Convert.ToInt32(sor.Split(' ')[2]);
-                int y = Convert.ToInt32(sor.Split(' ')[3]);
+                double x = Convert.ToDouble(sor.Split(' ')[2].Replace('.', ','));
+                double y = Convert.ToDouble(sor.Split(' ')[3].Replace('.', ','));
                 this.koordinata = new Koordinata(x, y);
             }
             else
@@ -27,7 +27,7 @@ namespace Okos_auto_CSharp
         }
         public double idopont { get; }
         public string esemeny { get; }
-        public Koordinata koordinata { get; set; }
+        public Koordinata koordinata { get; }
 
         public static List<Szenzor> szenzorAdatokEloallitasFilebol(string filename)
         {
